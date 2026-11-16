@@ -118,6 +118,24 @@ html{scroll-padding-top:150px}section[id],footer[id]{scroll-margin-top:150px}
 .home-about{padding:42px 0;border:0}.contact{padding:36px 0 24px}.contact h2{font-size:24px;font-weight:500;margin:0 0 12px}.contact p{font-size:14px}.contact .pill{margin:12px 0 22px}.foot{margin-top:30px;padding-top:20px}
 @media(max-width:900px) and (min-width:541px){.studio-masonry{columns:3}}
 @media(max-width:540px){.studio-masonry{columns:2;column-gap:6px}.compact-copy{grid-template-columns:1fr;gap:18px}.home-social,.home-about{padding:30px 0}#works .section-head h2,.compact-copy h2{font-size:23px}#works .project h3{font-size:13px}}
+</style><style>
+/* Filled masonry: varied tile heights with a flush outer edge. */
+.studio-masonry{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));grid-template-rows:repeat(6,minmax(0,1fr));grid-template-areas:"a d g j" "a d g j" "b d h k" "b e h k" "c f i l" "c f i l";height:clamp(420px,50vw,600px);gap:6px;columns:auto}
+.studio-masonry a{min-width:0;min-height:0;margin:0;overflow:hidden}
+.studio-masonry img{width:100%;height:100%;object-fit:cover;object-position:center}
+.studio-masonry a:nth-child(1){grid-area:a}
+.studio-masonry a:nth-child(2){grid-area:b}
+.studio-masonry a:nth-child(3){grid-area:c}
+.studio-masonry a:nth-child(4){grid-area:d}
+.studio-masonry a:nth-child(5){grid-area:e}
+.studio-masonry a:nth-child(6){grid-area:f}
+.studio-masonry a:nth-child(7){grid-area:g}
+.studio-masonry a:nth-child(8){grid-area:h}
+.studio-masonry a:nth-child(9){grid-area:i}
+.studio-masonry a:nth-child(10){grid-area:j}
+.studio-masonry a:nth-child(11){grid-area:k}
+.studio-masonry a:nth-child(12){grid-area:l}
+@media(max-width:600px){.studio-masonry{grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:repeat(12,minmax(0,1fr));grid-template-areas:"a d" "a d" "b d" "b e" "c f" "c f" "g j" "g j" "h k" "h k" "i l" "i l";height:clamp(760px,240vw,1200px);gap:5px}.studio-masonry a{margin:0}}
 </style></head><body>
 <header><div class="container nav"><a class="brand" href="#top"><img src="https://static.wixstatic.com/media/8109e1_f83cd66daf3045d1a0c431eb76735c43~mv2.png/v1/crop/x_128,y_142,w_1229,h_360/fill/w_259,h_76,al_c,q_85/8109e1_f83cd66daf3045d1a0c431eb76735c43~mv2.png" alt="伊莉莎白設計工作室 Elizabeth Design Studio" width="238" height="70"></a><button aria-label="開啟選單" class="menu" onclick="document.querySelector('.navlinks').classList.toggle('open')">☰</button><nav class="navlinks" id="navlinks"><a href="index.html" aria-current="page">首頁</a><a href="portfolio.html">設計作品</a><a href="services.html">服務項目</a><a href="index.html#about">關於工作室</a><a href="index.html#contact">聯絡合作</a></nav></div></header>
 <main id="top"><section class="container portfolio-wall" aria-label="設計作品瀑布流"><h1 class="visually-hidden">伊莉莎白設計工作室｜設計作品</h1><div class="studio-masonry"><a href="portfolio.html"><img src="https://static.wixstatic.com/media/8109e1_3da1e363fe33481f8552edcf34e616a5~mv2.jpg" alt="中山國小｜校刊設計" loading="eager"></a><a href="portfolio.html"><img src="https://res.cloudinary.com/bavlfj8q/image/upload/esd-bytelingo-brochure.jpg" alt="賦語科技｜企業三折頁" loading="eager"></a><a href="portfolio.html"><img src="https://static.wixstatic.com/media/8109e1_45033a43b9ad499ba65f32da9484b489~mv2.jpg" alt="品牌視覺設計" loading="eager"></a><a href="portfolio.html"><img src="https://res.cloudinary.com/bavlfj8q/image/upload/01-lien-shang-esg.png" alt="聯上實業｜2023 永續報告書封面" loading="eager"></a><a href="portfolio.html"><img src="https://static.wixstatic.com/media/8109e1_f3b3fef4a48b43678b832ad08026177f~mv2.png" alt="社群貼文整體展示" loading="eager"></a><a href="portfolio.html"><img src="https://res.cloudinary.com/bavlfj8q/image/upload/esd-bytelingo-business-card.jpeg" alt="賦語科技｜品牌名片" loading="eager"></a><a href="portfolio.html"><img src="https://static.wixstatic.com/media/8109e1_48b0894b3bb042a0b4a8bf01ee296b0f~mv2.jpg" alt="刊物封面設計" loading="eager"></a><a href="portfolio.html"><img src="https://res.cloudinary.com/bavlfj8q/image/upload/16-foxlink-zh-cover.png" alt="正崴精密｜中文版永續報告書" loading="eager"></a><a href="portfolio.html"><img src="https://static.wixstatic.com/media/8109e1_ba37ecfd109c4321b502f1df8bf4b64c~mv2.jpg" alt="數位內容設計" loading="eager"></a><a href="portfolio.html"><img src="https://res.cloudinary.com/bavlfj8q/image/upload/esd-bytelingo-presentation.jpg" alt="賦語科技｜企業簡報" loading="eager"></a><a href="portfolio.html"><img src="https://static.wixstatic.com/media/8109e1_1f1ebf9466014ff99730c04132f00735~mv2.jpg" alt="品牌宣傳視覺" loading="eager"></a><a href="portfolio.html"><img src="https://res.cloudinary.com/bavlfj8q/image/upload/09-kgi-landscape.png" alt="凱基銀行｜氣候與自然報告內頁" loading="eager"></a></div></section>
